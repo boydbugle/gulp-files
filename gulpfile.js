@@ -19,12 +19,7 @@ var lib = require('bower-files')({
   }
 });
 var browserSync = require('browser-sync').create();
-gulp.task('jsBrowserify', function(){
-    return browserify({entries:['./js/api-interface.js']})
-        .bundle()
-        .pipe(source('app.js'))
-        .pipe(gulp.dest('./build/js'));
-});
+
 gulp.task('concatInterface',function(){
     return gulp.src  (['./js/*-interface.js'])
     .pipe(concat('allConcat.js'))
