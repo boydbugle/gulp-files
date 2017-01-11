@@ -6,7 +6,7 @@
     "boydndongA <boydbugle@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/boydbugle/gulp-files",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "jquery": "^3.1.1",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "moment": "^2.17.1"
   }
 }

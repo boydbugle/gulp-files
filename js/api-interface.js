@@ -6,6 +6,6 @@ $(document).ready(function(){
         event.preventDefault();
         var input = $('#user').val();
         $('#user').val("");
-        currentuserObject.getapiCall(user);
+        currentuserObject.getapiCall(input);
     });
-});
+});  
