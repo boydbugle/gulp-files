@@ -4,11 +4,11 @@ function apiCall (){
 }
 
 apiCall.prototype.getapiCall= function(input){
-    $.get('https://api.github.com/users/'+  input +'?access_token='+ apiKey).then(function(response){
-        console.log(JSON.stringify(response));
+    $.get('https://api.github.com/users/'+  input +'/repos?access_token='+ apiKey).then(function(response){
+        $('.details').text(JSON.stringify(response));
     }).fail(function(error){
-        console.log(error.responseJSON.message);
+        $('.details').text(error.responseJSON.message);
     });
-}
+};
 
-exports.apiCallModule= apiCall
+exports.apiCallModule= apiCall;

@@ -8,4 +8,4 @@ $(document).ready(function(){
         $('#user').val("");
         currentuserObject.getapiCall(input);
     });
-});  
+});   
